@@ -1,3 +1,5 @@
+@Library(my-shared-libary)
+
 pipeline{
 
     agent any
@@ -10,7 +12,10 @@ pipeline{
 
                 script{
 
-                    git branch: 'main', url: 'https://github.com/khsr25/hsr_java_app.git'
+                    gitCheckout(
+                        branch: "main"
+                        url: "https://github.com/khsr25/hsr_java_app.git"
+                    )
                 }
             }
         }
