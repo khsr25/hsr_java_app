@@ -9,15 +9,11 @@ pipeline{
         stage('Git Checkout') {
 
             steps{
-
-                script{
-
-                    gitCheckout(
-                        branch: "main"
+                gitCheckout(
+                        branch: "main",
                         url: "https://github.com/khsr25/hsr_java_app.git"
-                    )
+                )
                 }
-            }
         }
     }
 }
