@@ -21,9 +21,9 @@ pipeline{
             steps{
                 script{
 
-                    mvnTest()
+                    mvntest()
                 }
-                }
+            }
         }
     }
 }
