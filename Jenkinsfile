@@ -15,5 +15,15 @@ pipeline{
                 )
                 }
         }
+
+                stage('Unit Test maveen') {
+
+            steps{
+                script{
+
+                    mvnTest()
+                }
+                }
+        }
     }
 }
